@@ -68,7 +68,7 @@ jQuery(document).ready(function($){
                 data : JSON.stringify(formData),
                 success: function(response){
                     if(response == 'success'){
-                        window.location.href = "http://localhost/php/project/1st-services.php";
+                        window.location.href = "http://localhost/php/project/1st-home.php";
                     }else{
                         $("#reponce").text(response);
                     }
@@ -76,9 +76,9 @@ jQuery(document).ready(function($){
         })
     })
 
+    // js for update btn
     $("#update").click(function(e){
         e.preventDefault();
-
         let fname = $("#name").val();
         let email = $("#email").val();
         let mpassword = $('#current-password').val();
@@ -106,27 +106,17 @@ jQuery(document).ready(function($){
             error: function(xhr) {
                 $('#response').text('Error: ' + xhr.status);
             }
-            })
-    })
+        })
+    });
+    
 
     $("#signup").click(function(e){
         e.preventDefault();
         window.location.href = "http://localhost/php/project/1st-html.php"
+        
     });
-    // // $("#services").click(function(e){
-    // //     e.preventDefault();
-    // //     $.ajax({
-    // //         url: '1st.php',
-    // //         type: 'POST',
-    // //         contentType: 'application/json',
-    // //         data: JSON.stringify(formData),
-    // //         success: function(response) {
-    // //             window.location.href = "http://localhost/php/project/Services.html"
-    // //             // $('#response').text(response);
-    // //         },
-    // //         error: function(xhr) {
-    // //             $('#response').text('Error: ' + xhr.status);
-    // //         }
-    // //         })
-    // });
+        $("#cal").click(function(e){
+        e.preventDefault();
+        window.location.href = "http://localhost/php/project/calculater/index.html"
+    });
 });

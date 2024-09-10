@@ -11,10 +11,18 @@ session_start();
     $conn = new mysqli($servername,$username,$password,$dbname);
 
     // check connection
-    if($conn->connect_error    ){
+    if($conn->connect_error){
         die("connection fail!" . mysqli_connect_error());
     }
 
+    // table for services
+    $table2 = "CREATE TABLE IF NOT EXISTS services(
+        id int (8) UNSIGNED auto_increment primary key,
+        title varchar (30) NOT NULL,
+        ndescription varchar (30) NOT NULL)";
+    if( !$conn->query($table2)){
+        echo "table not created!" . mysqli_error($conn);
+    }
 
     // create table
 

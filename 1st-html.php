@@ -2,7 +2,7 @@
 <?php
     session_start();
     if (!empty($_SESSION['user'])){
-        header("Location: http://localhost/php/project/1st-services.php");
+        header("Location: http://localhost/php/project/1st-home.php");
         die();
     }
 ?>
