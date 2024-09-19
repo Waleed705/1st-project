@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(3,39,60,1) 100%);
+    height: 100vh;
+    }
+img{
+    width: 100px;
+    height: 100px;
+    margin-left: 30px;
+}
+h1{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+fieldset{
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
+    width: 450px;
+    outline: 0;
+    border: 0;
+    box-shadow: -2px 2px 15px rgba(0,0,0,0.5);
+    /* height: 400px; */
+    /* padding: 12px; */
+}
+form{
+    padding: 40px;
+    width: 100%;
+    /* height: 100%; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+legend{
+    font-size: 20px;
+    font-weight: 300;
+    background: radial-gradient(circle, rgba(150,164,231,1) 21%, rgba(90,96,89,1) 71%);
+}
+.main{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 555px;
+    flex-direction: column;
+}
+
+.nep {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.nep--field{
+    width: 100%;
+    color: #f8f9fa;
+    background: transparent;
+    border: 2px solid;
+    outline: 0px;
+    border-radius: 60px;
+    /* margin-bottom: 15px; */
+    padding: 15px;
+    font-size: larger;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 40px; */
+}
+.des{
+    width: 100%;
+    color: #f8f9fa;
+    background: transparent;
+    border: 2px solid;
+    outline: 0px;
+    border-radius: 10px;
+    /* margin-bottom: 15px; */
+    padding: 15px;
+    font-size: larger;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 40px; */
+}
+.btns{
+    /* width: 50%; */
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 10px 0;
+}
+.submit{
+    width: 50%;
+    background:  rgb(240, 247, 35);
+    color: rgb(14, 9, 1);
+    height: 30px;
+    border-radius: 10px;
+    border: 0;
+    font-size: 20px;
+    font-weight: 600;
+    outline: 0;
+    cursor: pointer;
+    /* transition: background 1s ; */
+}
+.reset{
+    width: 50%;
+    background:  rgb(165, 218, 219);
+    color: rgb(14, 9, 1);
+    height: 30px;
+    border-radius: 10px;
+    border: 0;
+    font-size: 20px;
+    font-weight: 600;
+    outline: 0;
+    cursor: pointer;
+}
+#img{
+    display: inline-block; /* Button-like appearance */
+    /* height: 50px; */
+    width: 100%;
+    cursor: pointer; /* Cursor changes to pointer on hover */
+    background-color: #007BFF; /* Button background color */
+    color: #fff; /* Button text color */
+    border-radius: 4px; /* Rounded corners for the button */
+    font-size: 14px; /* Font size for the button text */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  /* Hover effect for the custom file upload button */
+  #img:hover {
+    background-color: #0056b3; /* Darker background color on hover */
+  }
+  
+  /* Optional: Style for displaying the chosen file name */
+  #img{
+    font-style: italic; 
+  }
+  input[type="file"] {
+    display: none; /* Hide the actual file input */
+  }
+  .save{
+    width: 50%;
+    background:  rgb(240, 247, 35);
+    color: rgb(14, 9, 1);
+    height: 30px;
+    border-radius: 10px;
+    border: 0;
+    font-size: 20px;
+    font-weight: 600;
+    outline: 0;
+    cursor: pointer;
+}

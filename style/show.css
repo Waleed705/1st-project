@@ -1,0 +1,87 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+    body{
+        background: rgb(35, 50, 47);
+        /* height: 100vh; */
+}
+    .container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+}
+    .card {
+        width: 300px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        padding: 15px;
+        margin: 25px;
+        border: 2px solid rgb(144, 247, 243);
+        text-align: center;
+        font-family: arial;
+        background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(153,120,78,1) 76%);
+}
+    .description {
+        color: white;
+        font-size: 22px;
+}
+    .add-ser{
+            background-image: linear-gradient(to right, #16222A 0%, #3A6073  51%, #16222A  100%);
+            margin: 10px;
+            margin-left: 136px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+}
+    .add-ser:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+}
+    .error_message{
+        margin-top: 22px;
+        margin-left: 237px;
+        font-size: 70px;
+        font-family: cursive;
+        color: rgb(249, 135, 124);
+}
+    .edit{
+        background-image: linear-gradient(to right, #adc667 0%, #3A6073  51%, #74a0be  100%);
+        padding: 15px 45px;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;            
+        box-shadow: 0 0 20px #eee;
+        border-radius: 10px;
+}
+    .edit:hover {
+        background-position: right center; /* change the direction of the change here */
+        color: #fff;
+        text-decoration: none;
+}
+   .del{
+        background-image: linear-gradient(to right, #f41414 0%, #423939  51%, #74a0be  100%);
+        margin: 10px;
+        /* margin-left: 70px; */
+        padding: 15px 23px;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;            
+        box-shadow: 0 0 20px #eee;
+        border-radius: 10px;
+        width: 100px;
+    }
+    .del:hover {
+        background-position: right center; /* change the direction of the change here */
+        color: #fff;
+        text-decoration: none;
+}
